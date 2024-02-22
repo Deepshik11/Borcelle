@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borcelle-Product</title>
+    <!--Css-->
+    <link rel="stylesheet" href="product.css">
+    <!--Icon-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+      <link rel="shortcut icon" href="images/weblogo.jpg" type="image/x-icon">
+</head>
+<body>
+
+        <div class="navigation">
+        <div class="log">
+            <img class="logo" src="images/d5.png"alt="logo">
+        </div>
+        <div class="searchs">
+            <input type="text" placeholder="Search bar" id="product" autocomplete="off" >
+            <i class="fa-solid fa-magnifying-glass"></i>
+   </div>   
+   <ul class="login_list"> 
+    <a  href="home.html"><i class="fa-solid fa-house"></i> Home</a>
+
+      <img src="images/line-removebg-preview (1).png" alt="">
+
+    <li class="demo2"> <a class="demo" href="#"><i class="fa-solid fa-user"></i> Profile</a>
+                                        <ul class="dropdowm">
+                                                <li><h1>Welcome </h1></li>
+                                                <li><p>To access your Borcelle account </p></li>
+                                                <li><a id="demo3" href="login.html"><button >Login / SignUp</button> </a></li>
+                                               
+                                        </ul>
+                                        </li>
+    <img src="images/line-removebg-preview (1).png" alt="">
+    <a  class="active" href="product.html"><i class="fa-solid fa-box"></i> Products</a>
+    <img src="images/line-removebg-preview (1).png" alt="">
+    <div class="loader"></div>
+    <div class="box">
+      <div id="cart-count">0</div>
+    <li id="Food"> <a><i class="fa-solid fa-cart-shopping"></i> Cart</a></li> 
+  </div>
+
+    <img src="images/line-removebg-preview (1).png" alt="">
+    <li id="Help">
+    <a  href="#"><i class="fa fa-question-circle" aria-hidden="true"></i> Help</a></li>
+   
+</ul> 
+     
+        </div> 
+        <!-- --advertisement-- -->
+                      <div class="poster">
+              <img src="images/poster3.jpg" alt="">
+                      </div>
+
+          <!-- product  -->
+
+           <div class="featured-container" id="featured-container">
+
+             <h1>watch collections</h1>
+              <div class="row">
+              <div class="colum2" >
+                <img class="productimage" src="images/product-colo1-1.webp" onclick="window.location.href='single32.html'">
+                <h4 class="title"> Boys Series Analog Watch </h4>
+                <section class="ratting">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star"></i>
+                </section>  
+                <p class="amount"><i class="fa fa-inr" ></i> 230.00</p>
+                 <ion-icon onclick="count()" class="addcart" name="cart-outline"></ion-icon>
+                </div>
+
+                <div class="colum2" >
+                  <img class="productimage" src="images/product-colo1-2.webp" onclick="window.location.href='single33.html'">
+                  <h4 class="title">Solid Spread Collar<br> Casual Shirt</h4>
+                  <section class="ratting">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </section>  
+                  <p class="amount"><i class="fa fa-inr" ></i> 260.00</p>
+                   <ion-icon onclick="count()" class="addcart" name="cart-outline"></ion-icon>
+                </div>
+
+                  <div class="colum2" >
+                    <img class="productimage"  src="images/product-colo1-3.webp" onclick="window.location.href='single34.html'">
+                    <h4 class="title">Turtle Neck Black Sweater</h4>
+                    <section class="ratting">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </section>  
+                    <p class="amount"><i class="fa fa-inr" ></i> 399.00</p>
+                     <ion-icon onclick="count()" class="addcart" name="cart-outline"></ion-icon>
+                    </div>
+                    <div class="colum2" >
+                      <img class="productimage" src="images/product-colo1-4.webp" onclick="window.location.href='single31.html'">
+                      <h4 class="title"> Volt Analog Watch</h4>
+                      <section class="ratting">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </section>  
+                      <p class="amount"><i class="fa fa-inr" ></i> 699.00</p>
+                       <ion-icon onclick="count()" class="addcart" name="cart-outline"></ion-icon>
+                     </div>
+                     <div class="colum2" >
+                      <img class="productimage" src="images/product-colo1-5.webp" onclick="window.location.href='single36.html'">
+                      <h4 class="title">Solid Casual Light Gray Shirt </h4>
+                      <section class="ratting">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </section>  
+                      <p class="amount"><i class="fa fa-inr" ></i> 399.00</p>
+                       <ion-icon onclick="count()" class="addcart" name="cart-outline"></ion-icon>
+                    </div>
+
+           <div class="colum2">
+            <img class="productimage" src="images/deep1.webp"  onclick="window.location.href='single8.html'">
+            <h4 class="title">beatXP Marv Neo  <br>Smartwatch</h4>
+            <section class="ratting">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <i class="fa-regular fa-star"></i>
+            </section>  
+            <p class="amount"><i class="fa fa-inr" ></i> 1,299.00</p>
+             <ion-icon onclick="count()" class="addcart" name="cart-outline"></ion-icon>
+            </div>
+
+                        <div class="colum2">
+                          <img class="productimage" src="images/product-colo1-7.webp"  onclick="window.location.href='single35.html'">
+                          <h4 class="title">Analog Watch - For Men 209BLUBLU ​​​​​​​<br> (2nd Generation)</h4>
+                          <section class="ratting">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                          </section>  
+                          <p class="amount"><i class="fa fa-inr" ></i> 399.00</p>
+                           <ion-icon onclick="count()" class="addcart" name="cart-outline"></ion-icon>
+                          </div>
+                          <div class="colum2">
+                            <img class="productimage" src="images/deep10.webp"  onclick="window.location.href='single15.html'">
+                            <h4 class="title">Noise Icon 2 1.8 <br>Smartwatch</h4>
+                            <section class="ratting">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa-solid fa-star-half-stroke"></i>
+                              <i class="fa-regular fa-star"></i>
+                            </section>  
+                            <p class="amount"><i class="fa fa-inr" ></i> 1,499.00</p>
+                             <ion-icon onclick="count()" class="addcart" name="cart-outline"></ion-icon>
+                           </div>
+                            <div class="colum2" >
+                              <img  class="productimage" src="images/product-colo1-9.webp" onclick="window.location.href='single38.html'">
+                              <h4 class="title"> Slim Fit Spread Collar Casual Shirt</h4>
+                              <section class="ratting">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                              </section>  
+                              <p class="amount"><i class="fa fa-inr" ></i> 227.00</p>
+                               <ion-icon onclick="count()" class="addcart" name="cart-outline"></ion-icon>
+                             </div>
+
+                             <div class="colum2" >
+                              <img class="productimage" src="images/product-colo1-10.webp" onclick="window.location.href='single37.html'">
+                              <h4 class="title">Fire-Boltt Ninja Calling Pro Plus </h4>
+                              <section class="ratting">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                              </section>  
+                              <p class="amount"><i class="fa fa-inr" ></i> 1,099.00</p>
+                               <ion-icon onclick="count()" class="addcart" name="cart-outline"></ion-icon>
+                             </div>
+              </div>
+                   
+                              <h1 id="link3">Headphone collections</h1>
+
+                     <div class="row">
+                    <div class="colum2" >
+                      <img class="productimage" src="images/deep2.jpg" onclick="window.location.href='single9.html'">
+                      <h4 class="title">Apple AirPods Pro ​​​​​​​<br> (2nd Generation)</h4>
+                      <div class="ratting">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>  
+                      <p class="amount"><i class="fa fa-inr" ></i> 21,990.00</p>
+                       <ion-icon onclick="count()" class="addcart" name="cart-outline"></ion-icon>
+                      </div>
+                        
+                       <div class="colum2">
+                         <img class="productimage" src="images/product-colo1-12.webp"  onclick="window.location.href='single45.html'">
+                         <h4 class="title"> Number Super Buds Pro GT9 ENC Gaming TWS</h4>
+                         <div class="ratting">
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa-solid fa-star-half-stroke"></i>
+                           <i class="fa-regular fa-star"></i>
+                         </div>  
+                         <p class="amount"><i class="fa fa-inr" ></i> 1,299.00</p>
+                          <ion-icon onclick="count()" class="addcart" name="cart-outline"></ion-icon>
+                         </div>
+                         <div class="colum2" >
+                          <img class="productimage" src="images/deep9.webp" onclick="window.location.href='single14.html'">
+                          <h4 class="title">snowbudy T-80 XPods Pro Airpods</h4>
+                          <div class="ratting">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>  
+                          <p class="amount"><i class="fa fa-inr" ></i> 1,079.00</p>
+                           <ion-icon onclick="count()" class="addcart" name="cart-outline"></ion-icon>
+                         </div>
+                           <div class="colum2" >
+                             <img class="productimage" src="images/product-colo1-14.webp" onclick="window.location.href='single39.html'">
+                             <h4 class="title">NOPE Nuclear A1+ TWS Buds</h4>
+                             <div class="ratting">
+                               <i class="fa fa-star"></i>
+                               <i class="fa fa-star"></i>
+                               <i class="fa fa-star"></i>
+                               <i class="fa-solid fa-star-half-stroke"></i>
+                               <i class="fa-regular fa-star"></i>
+                             </div>  
+                             <p class="amount"><i class="fa fa-inr" ></i> 599.00</p>
+                              <ion-icon onclick="count()" class="addcart" name="cart-outline"></ion-icon>
+                            </div>
+                            <div class="colum2" >
+                              <img class="productimage" src="images/product-colo1-15.webp" onclick="window.location.href='single40.html'">
+                              <h4 class="title">NOPE Nuclear A1+ TWS Buds</h4>
+                              <div class="ratting">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                              </div>  
+                              <p class="amount"><i class="fa fa-inr" ></i> 599.00</p>
+                               <ion-icon onclick="count()" class="addcart" name="cart-outline"></ion-icon>
+                             </div>
+                   
+                    <div class="colum2" >
+                      <img class="productimage" src="images/product-colo1-16.webp" onclick="window.location.href='single41.html'">
+                      <h4 class="title">OnePlus Bullets Wireless Z2 Bluetooth Headset </h4>
+                      <div class="ratting">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </div>  
+                      <p class="amount"><i class="fa fa-inr" ></i> 1,599.00</p>
+                       <ion-icon onclick="count()" class="addcart" name="cart-outline"></ion-icon>
+                      </div>
+                      <div class="colum2">
+                        <img class="productimage" src="images/product-colo1-17.webp"onclick="window.location.href='single43.html'">
+                        <h4 class="title">  ZEBRONICS Zeb Dynamic Headset</h4>
+                        <div class="ratting">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa-solid fa-star-half-stroke"></i>
+                          <i class="fa-regular fa-star"></i>
+                        </div>  
+                        <p class="amount"><i class="fa fa-inr" ></i> 1,424.00</p>
+                         <ion-icon onclick="count()" class="addcart" name="cart-outline"></ion-icon>
+                        </div>
+                        <div class="colum2" >
+                          <img class="productimage" src="images/deep3.jpg" onclick="window.location.href='single10.html'">
+                          <h4 class="title">PTron Bassstrings 4A with 18 Hrs Playtime</h4>
+                          <div class="ratting">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                          </div>  
+                          <p class="amount"><i class="fa fa-inr" ></i> 599.00</p>
+                           <ion-icon onclick="count()" class="addcart" name="cart-outline"></ion-icon>
+                          </div>
+                          <div class="colum2">
+                            <img class="productimage" src="images/product-colo1-19.webp" onclick="window.location.href='single44.html'">
+                            <h4 class="title">ZEBRONICS Zeb Dynamic Headset</h4>
+                            <div class="ratting">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa-solid fa-star-half-stroke"></i>
+                              <i class="fa-regular fa-star"></i>
+                            </div>  
+                            <p class="amount"><i class="fa fa-inr" ></i> 1,424.00</p>
+                            <ion-icon onclick="count()" class="addcart" name="cart-outline"></ion-icon>
+                           </div>
+                           <div class="colum2" >
+                            <img  class="productimage" src="images/product-colo1-20.webp" onclick="window.location.href='single42.html'">
+                            <h4 class="title">boAt Rockerz 110  Headset</h4>
+                            <div class="ratting">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa-solid fa-star-half-stroke"></i>
+                              <i class="fa-regular fa-star"></i>
+                            </div>  
+                            <p class="amount"><i class="fa fa-inr" ></i> 899.00</p>
+                             <ion-icon onclick="count()" class="addcart" name="cart-outline"></ion-icon>
+                           </div>
+                     </div>
+                    </div>
+                 
+                 
+                     <section class="page">
+                    <a href="product.html"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></a>
+                    <a href="product2.html">2</a>
+                    <a href="product3.html"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+
+                     </section>
+                      
+                
+                         <!-- -------footer------- -->
+                     <div class="contact">
+                      <div class="footer-1">
+                        <h1>Shop on Borcelle</h2>
+                          <p>Helping buyers and sellers to attain their goals</p>
+                            <p> Cash on Delivery | Free Delivery </p>
+                           <div class="appstore">
+                          <a href="https://play.google.com/store/apps?hl=en_IN&gl=US"><img class="playstore" src="images/playstore.webp"></a>  
+                           
+                         <a href="https://www.apple.com/in/app-store/"> <img class="appsstore" src="images/apple_store-removebg-preview.png"></a>
+                           </div>
+                      </div>
+  
+                      <div class="simple-contend">
+                            <h3>What's In Store</h3>
+                            <a href="#">Slippers</a>
+                            <a href="#">Casual Shoes</a>
+                            <a href="#">Smart Watches</a>
+                            <a href="#">TWS Buds</a>
+                            <a href="#">Casual Shirts</a>
+                            <a href="#">Formal Pants</a>
+                      </div>
+                      <div class="simple-contend">
+                        <h3>Company Info & Policies</h3>
+                        <a href="#">Coupons</a>
+                        <a href="#">Terms & Conditions</a>
+                        <a href="#">Return & Claim Policy</a>
+                        <a href="#">Return/Exchange</a>
+                        <a href="#">Free Service</a>
+                  </div>
+                   <div class="simple-contend1">
+                    <h3>Get In Touch</h3>
+                    <div class="social-media">
+                    <a href="https://www.instagram.com/d_e_e_p_s_h_i_k_07_/"><img src="images/socialmedia1-removebg-preview.png"></a>  
+                     <a href="https://twitter.com/1Deepshik43792"> <img src="images/socialmedia2-removebg-preview.png" alt=""></a>
+                     <a href="https://www.facebook.com/profile.php?id=61556113556388"><img src="images/socialmedia3.png" alt=""></a>
+                      <a href=""><img src="images/socialmedia4.png" alt=""></a>
+                    </div>
+                    <div class="simple-contend-1">
+                      <h3>Contact US</h3>
+                      <p>Location : Chennai,TamilNadu</p>
+                      <p>Email Address : mdeepshik85@gmail.com</p>
+                      <p>Ph.no : 8248140830</p>
+                    </div>
+                    </div>
+                     </div>
+
+                    <!-- --------cart-------- --> 
+              
+                     <div class="cart">
+                      <div class="cart-title">Cart Items</div>
+              
+                         <div class="cart-contend">
+                 
+                         </div>
+              
+                         <div class="total">
+                          <div class="total-title">Total:</div>
+                          <div class="total-price"> Rs.0</div>
+                         </div>
+              
+                         <button class="btn-buy">Place Order</button>
+              
+                         <ion-icon name="close" id="cart-close"></ion-icon>
+                         
+                      
+                               </div> 
+                    
+
+<!-- -----------------help center-------------- -->
+                            
+                            <div class="help ">
+                              <div class="helpimg">
+                                <img src="images/helpicon.png">
+                                 <p>&nbsp;&nbsp;Help Center</p>
+                             </div>
+                              <div class="help-title">
+                               <h1 class="helps"> How can we help?</h1></div>
+                               <i  class="fa fa-times-circle" ></i>
+
+                                <div class="help-searchs">
+                              <input type="text" placeholder="Search a topic" id="helpsearch" autocomplete="off" >
+                              <i class="fa-solid fa-magnifying-glass"></i>
+                     </div>   
+                           
+<div class="maintopic" id="maintopic">
+                       <h2 class="helpone">General</h2>
+                            
+                                 <div class="topic">
+                       <div class="first-topic" id="first-topic1">
+
+                           <img src="images/topic1.png" alt="">
+              
+                           <h5>Payment issues</h5>
+                       </div>
+                       
+                        <div class="first-topic" id="first-topic2">
+                        
+
+                           <img src="images/topic2.webp" alt="">
+                         
+                           <h5>Profile </h5>
+                       </div>
+                       
+                          
+                     </div>
+                       <div class="topic">
+                       <div class="first-topic" id="first-topic3">
+
+                           <img src="images/topic3.avif" alt="">
+              
+                           <h5>Money Transfer</h5>
+                       </div>
+                       
+                        <div class="first-topic" id="first-topic4">
+                       
+
+                           <img src="images/help6.jpg" alt="">
+                         
+                           <h5>Security & Privacy</h5>
+                       </div>
+                       
+                          
+                     </div>
+                       <div class="topic">
+                       <div class="first-topic" id="first-topic5">
+
+                           <img src="images/topic5.webp" alt="">
+              
+                           <h5>Offers & Rewards</h5>
+                       </div>
+                       
+                        <div class="first-topic" id="first-topic6">
+                      
+
+                           <img src="images/topic6.jpg" alt="">
+          
+                           <h5>Other Issues</h5>
+                       </div>
+                       
+                          
+                     </div>
+           </div>               
+                   </div>  
+                                <!-- --------------help contend 1------------------ -->
+                    <div class="helpcontend1">
+                        <div class="helptopic">
+                           <h1  class="contend1" onclick="show(this)">1. Issues with failed payments ? <ion-icon name="chevron-down-outline" class="help1" ></ion-icon></h1>
+                           <p class="helppara">If money is deducted for a failed payment, there is no need to worry as it is absolutely safe with your bank. The amount will be refunded to your account within 3 to 5 days.</p><hr>
+                            <h1 class="contend1" onclick="show(this)">2. Issues with pending payments ? <ion-icon name="chevron-down-outline" class="help1" ></ion-icon></h1>
+                                  <p class="helppara">Banks usually confirm the final payment status within 48 hours from the time you made the payment. If you see that your payment is still marked as pending in the <b>History</b> section of your Order page after 48 hours,please tap the button below to report this issue to us.We will escalate this issue with the banking authorities on your behalf.</p><hr>
+                                                <h1 class="contend1" onclick="show(this)">3. Issues with successful payment ? <ion-icon name="chevron-down-outline" class="help1" ></ion-icon></h1>  
+                                   <p class="helppara">The payment gateway does not support the online payment method chosen by the customer. If the bank flags the customer's account. If the account through which the transaction is initiated is closed or suspended.</p><hr>
+                              <h1 class="contend1" onclick="show(this)">4. Issues with refunds ? <ion-icon name="chevron-down-outline" class="help1"></ion-icon></h1>
+                                    <p class="helppara">For redress of his complaints, the consumer should turn to the consumer disputes redressal committee, the state consumer protection council, or the Central Consumer Protection Council. The Central Consumer Protection Council is accountable for enforcing the Consumer Protection Act's provisions and regulations.</p><hr>
+   <i  id="helpcon" class="fa fa-times-circle" ></i>
+                        </div>
+                    </div>
+                   <!-- ----------second contend-------- -->
+
+                               <div class="helpcontend2">
+                        <div class="helptopic">
+                           <h1 class="contend1" onclick="show(this)">1. How do I change my email address ?  <ion-icon name="chevron-down-outline" class="help1" ></ion-icon></h1>
+                           <p class="helppara">You can't change your username or the actual email address. You can only change the name associated with the account.
+If people have you saved as something else in their contacts, that's the name they'll see.</p><hr>
+                            <h1 class="contend1" onclick="show(this)">2. How do I add my address on Borcelle ? <ion-icon name="chevron-down-outline" class="help1" ></ion-icon></h1>
+                                  <p class="helppara">To add your address: Tap your name in the profile screen . Top Add new under the saved addresses section . Tap Change if you want to change the location details.Tap confirm.ENter your address,save it as a home or office address and tap save and proceed.</p><hr>
+                             <h1 class="contend1" onclick="show(this)">3. How do I remove my saved address ? <ion-icon name="chevron-down-outline" class="help1" ></ion-icon></h1>
+                                   <p class="helppara">TO remove your saved address on Borcelle: Tap your profile on the Borcelle screen. In the Saved addresses section, tap the three dots next to the address you wish to remove.Tap Delete address. </p><hr>
+                              <h1 class="contend1" onclick="show(this)">4. How do I  use a saved address for ? <ion-icon name="chevron-down-outline" class="help1" ></ion-icon></h1>
+                                    <p class="helppara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat asperiores, vel alias molestias libero a, debitis ut atque, corrupti modi qui itaque saepe. Iste et provident veritatis, aut maiores vel?</p><hr>
+   <i  id="helpcon2" class="fa fa-times-circle" ></i>
+                        </div>
+                    </div>
+ 
+                   <!-- ------- third contend ------ -->
+                             <div class="helpcontend3">
+                        <div class="helptopic">
+                           <h1 class="contend1" onclick="show(this)">1. What if I face an issue while payment ? <ion-icon name="chevron-down-outline" class="help1" ></ion-icon></h1>
+                           <p class="helppara">Online payments have so many upsides. But, if you’re like most online merchants, you too may have experienced online payment problems in the past. Online payment problems can sometimes be frustrating, especially when your customers are trying to complete an online transaction and the payment keeps failing. Starting an online business is exciting. </p><hr>
+                            <h1 class="contend1" onclick="show(this)">2. Can I cancel a payment ? <ion-icon name="chevron-down-outline" class="help1"></ion-icon></h1>
+                                  <p class="helppara">Canceling a completed payment immediately is generally not an option because the other party already has the money. When you authorize a payment to a merchant, you agree to make a purchase for a specified amount.</p><hr>
+                             <h1 class="contend1" onclick="show(this)">3. What is the payment method ? <ion-icon name="chevron-down-outline" class="help1" ></ion-icon></h1>
+                                   <p class="helppara">Globally, credit and debit cards and digital wallets are the most popular payment methods, but other payment methods, like bank transfers and cash on delivery (COD), remain popular in certain regions. The use of mobile payments is also growing, particularly in markets with high smartphone penetration.</p><hr>
+                              <h1 class="contend1" onclick="show(this)">4. Which payment method is best ? <ion-icon name="chevron-down-outline" class="help1" ></ion-icon></h1>
+                                    <p class="helppara">The CVV helps detect fraud by comparing customer details and the CVV number. Debit cards are considered the best payment method for e-commerce transactions. </p><hr>
+   <i  id="helpcon3" class="fa fa-times-circle" ></i>
+                        </div>
+                    </div>
+                    <!-- ---------forth contend------- -->
+           <div class="helpcontend4">
+                        <div class="helptopic">
+                           <h1 class="contend1" onclick="show(this)">1. What is security in Borcelle ? <ion-icon name="chevron-down-outline" class="help1" ></ion-icon></h1>
+                           <p class="helppara">Privacy – the control over one's personal data – and security – the attempted access to data by unauthorized others – are two critical problems for both e-commerce consumers and sites alike. Without either, consumers will not visit or shop at a site, nor can sites function effectively without considering both.</p><hr>
+                            <h1 class="contend1" onclick="show(this)">2. What are the security issues ? <ion-icon name="chevron-down-outline" class="help1" ></ion-icon></h1>
+                                  <p class="helppara">Overall, Card skimming attacks, Point of Sale malware and Phishing are the top three e-Commerce security issues</p><hr>
+                             <h1 class="contend1" onclick="show(this)">3. What is privacy and security? <ion-icon name="chevron-down-outline" class="help1"></ion-icon></h1>
+                                   <p class="helppara">In the digital world, security generally refers to the unauthorized access of data, often involving protection against hackers or cyber criminals. Privacy involves your right to manage your personal information, and security is the protection of this information. Both are equally important aspects of cyber safety.</p><hr>
+                              <h1 class="contend1" onclick="show(this)">4. What are the security issues of Web ? <ion-icon name="chevron-down-outline" class="help1" ></ion-icon></h1>
+                                    <p class="helppara">Web security issues can severely damage businesses and individuals. Common types of web security threats include computer viruses, data theft, and phishing attacks. While they are not limited to online activity, web security issues involve cyber criminals using the internet to cause harm to victims.</p><hr>
+   <i  id="helpcon4" class="fa fa-times-circle" ></i>
+                        </div>
+                    </div>
+                    <!-- --------fifth contend------ -->
+           <div class="helpcontend5">
+                        <div class="helptopic">
+                           <h1 class="contend1" onclick="show(this)">1. What are rewards in Borcelle ?  <ion-icon name="chevron-down-outline" class="help1" ></ion-icon></h1>
+                           <p class="helppara">A good rewards program both encourages and rewards repeat business. It offers points, discounts, free shipping, special shopping days, member-only perks, and more to keep customers excited about the brand and its products.</p><hr>
+                            <h1 class="contend1" onclick="show(this)">2. What is a reward example ?<ion-icon name="chevron-down-outline" class="help1" ></ion-icon></h1>
+                                  <p class="helppara">A reward is something that you are given, for example because you have behaved well, worked hard, or provided a service to the community. Never give children sweets, biscuits or cakes as a reward for being good. He was given the job as a reward for running a successful leadership bid.</p><hr>
+                             <h1 class="contend1" onclick="show(this)">3. Advantages of reward system?<ion-icon name="chevron-down-outline" class="help1" ></ion-icon></h1>
+                                   <p class="helppara">They can increase productivity
+
+With increased staff morale, high-quality staff and lower levels of turnover, productivity can ultimately increase. If a target driven reward scheme is being introduced, employees may have to reach certain work thresholds so they can benefit from the scheme.</p><hr>
+                              <h1 class="contend1" onclick="show(this)">4. What is a gift Cards example? <ion-icon name="chevron-down-outline" class="help1" ></ion-icon></h1>
+                                    <p class="helppara">gift cards contain a gift code assigned by the store using which you can redeem the card's value. If it is an online-only gift card, then the code can be added on the checkout page; alternatively, the amount can be added to the store wallet while making the payment.</p><hr>
+   <i  id="helpcon5" class="fa fa-times-circle" ></i>
+                        </div>
+                    </div>
+
+                    <!-- ------sixth contend----- -->
+                               <div class="helpcontend6">
+                        <div class="helptopic">
+                           <h1 class="contend1" onclick="show(this)">1. Why am I not receiving the OTP ? <ion-icon name="chevron-down-outline" class="help1"></ion-icon></h1>
+                           <p class="helppara">A wrong mobile number can prevent you from receiving OTPs. Delayed delivery: Sometimes, OTPs may take a few minutes to be delivered due to network or server issues. Wait for a few minutes and try again. Full inbox: If your inbox is full, you may not receive the OTP.</p><hr>
+                            <h1 class="contend1" onclick="show(this)">2. What if I have an issue with my order ? <ion-icon name="chevron-down-outline" class="help1" ></ion-icon></h1>
+                                  <p class="helppara">First, contact the seller. Most businesses will work with you to resolve the problem and keep you as a customer.</p><hr>
+                             <h1 class="contend1" onclick="show(this)">3. What to do if you get the wrong order ? <ion-icon name="chevron-down-outline" class="help1" ></ion-icon></h1>
+                                   <p class="helppara">It depends on the store's return policy, but it may be possible to keep the wrong item and still receive a refund or replacement for the original order by contacting the store and letting them know about the mistake. They will likely ask for proof of the mistake and may ask you to return the incorrect item</p><hr>
+                              <h1 class="contend1" onclick="show(this)">4. How do I complain about my order ? <ion-icon name="chevron-down-outline" class="help1" ></ion-icon></h1>
+                                    <p class="helppara">Try claiming through the company first. Write a formal complaint letter (incl template) Negotiate, negotiate, negotiate.If all else fails: how to take them to court.Making a court claim online.</p><hr>
+   <i  id="helpcon6" class="fa fa-times-circle" ></i>
+                        </div>
+                    </div>
+
+
+                    <!-- -------payment page -------  -->
+                 
+                   <div class="payment-container" style="background-color: white;">
+                 
+                          <div class="payment">
+                             <div class="pay">
+                                 <form action="" name="emp3" onsubmit="return validateNumber();">
+                              <h3 class="payment-title">
+                                Delivery Address
+                              </h3>
+                              <div class="payment-input">
+                                 <span class="span">
+                                   Full Name :
+                                 </span>
+                                 <input type="text" name="" id="input2" class="input">
+                              </div>
+
+                                <div class="payment-input">
+                                 <span class="span">
+                                    Ph No :
+                                 </span>
+                                 <input type="text" name="" id="input" name="ph" class="input">
+                              </div>
+
+    
+                                <div class="payment-input">
+                                 <span class="span">
+                                  Locality :
+                                   <span>
+                                 <input type="" name="" id="input4" class="input">
+                             
+                              </div>
+
+                                <div class="payment-input">
+                                 <span class="span">
+                                  Address :
+                                 </span>
+                                <textarea name="add" id="input3" cols="43" rows="3" ></textarea>
+                              </div>
+
+                            
+
+                                <div class="payment-input">
+                                 <span class="span">
+                                   City/District/Town :
+                                 </span>
+                                 <input type="text" name="" id="input5" class="input">
+                              </div>
+
+                      
+                      <div class="payment-flex">
+                                  <div class="payment-input">
+                                 <span class="span">
+                                   State :
+                                 </span>
+                                 <!-- <input type="text" name="" id="" class="input" > -->
+                               <select name="" id="" class="input">
+                                     <option value="">Andhra Pradesh</option>
+                                     <option value="">Arunachal Pradesh</option>
+                                      <option value="TamilNadu">Assam</option>
+                                     <option value="">Bihar</option>
+                                     <option value="">Chhattisgarh</option>
+                                     <option value="">Goa</option>
+                                     <option value="">Gujarat</option>
+                                     <option value="">Haryana</option>
+                                     <option value="">Himachal Pradesh</option>
+                                     <option value="">Jharkhand</option>
+                                     <option value="">Karnataka</option>
+                                     <option value="TamilNadu">Kerela</option>
+                                     <option value="">Madhya Pradesh</option>
+                                      <option value="">Maharashtra</option>
+                                     <option value="">Manipur</option>
+                                     <option value="">Meghalaya</option>
+                                     <option value="">Mizoram</option>
+                                     <option value="">Nagaland</option>
+                                     <option value="">Odisha</option>
+                                     <option value="">Punjab</option>
+                                     <option value="">Rajasthan</option>
+                                     <option value="">Sikkim</option>
+                                     <option value="TamilNadu">TamilNadu</option>
+                                     <option value="">Telangana	</option>
+                                     <option value="">Tripura</option>
+                                     <option value="">Uttar Pradesh</option>
+                                     <option value="">Uttarakhand</option>
+                                     <option value="">West Bengal	</option>
+
+                                 </select>
+                              </div>
+
+                              <div class="payment-input">
+                                 <span class="span">
+                                  Pincode :
+                                 </span>
+                                 <input type="text" name="" id="input6" class="input">
+
+                             </div>
+                             
+                             </div> 
+                            <button type="submit" class="b5">Save the address</button>
+                            </form>
+                           </div>
+                            
+
+                             <!-- ----payment-- -->
+                               <div class="pay">
+                                   <form action="home.html" method="post" name="emp4" onsubmit="return order();">
+                              <h3 class="payment-title">
+                                Payment Options
+                              </h3>
+                              <div class="payment-input" class="input">
+                                 <span class="span">
+                                   Card Accepted :
+                                 </span>
+                                <img src="images/card_img.png" alt="">
+                              </div>
+
+                                <div class="payment-input">
+                                 <span class="span">
+                                   Card On Name :
+                                 </span>
+                                 <input type="text" name="" id="input7" class="input" >
+                              </div>
+                              
+                          
+                             
+                                <div class="payment-input">
+                                 <span class="span">
+                                 Card No :
+                                   <span>
+                                 <input type="text" name="" id="input8" class="input" >
+                              </div>
+
+                                <div class="payment-input">
+                                 <span class="span">
+                                Valid Month :
+                                 </span>
+                
+                                 <select name="" class="input" id="">
+                                  <option value="">January</option>
+                                  <option value="">February </option>
+                                  <option value="">March</option>
+                                  <option value="">April</option>
+                                  <option value="">May</option>
+                                  <option value="">June</option>
+                                  <option value="">July</option>
+                                  <option value="">August</option>
+                                  <option value="">Semptember</option>
+                                  <option value="">October</option>
+                                  <option value="">November</option>
+                                  <option value="">December</option>
+                                 </select>
+                              </div>
+
+    <div class="payment-flex">
+                                  <div class="payment-input">
+                                 <span class="span">
+                                   State :
+                                 </span>
+                                 <!-- <input type="text" name="" id="" class="input" > -->
+                               <select name="" id="" class="input">
+                                     <option value="">2024</option>
+                                     <option value="">2025</option>
+                                      <option value="TamilNadu">2026</option>
+                                     <option value="">2027</option>
+                                     <option value="">2028</option>
+                                     <option value="">2029</option>
+                                     <option value="">2030</option>
+                                     <option value="">2031</option>
+                                     <option value=""> 2032</option>
+                                     <option value="">2034</option>
+                                     <option value="">2035</option>
+                                     <option value="TamilNadu">2036</option>
+                                     <option value="">2037</option>
+                                      <option value="">2038</option>
+                                     <option value="">2039</option>
+                                     <option value="">2040</option>
+                                     <option value="">2041</option>
+                                     <option value="">2042</option>
+                                     <option value="">2043</option>
+                                     <option value="">2044</option>
+                                     <option value="">2045</option>
+                                     <option value="">2046</option>
+                                     <option value="TamilNadu">2047</option>
+                                     <option value="">2048	</option>
+                                     <option value="">2049</option>
+                                     <option value="">2050</option>
+                                     <option value="">2051</option>
+                                     <option value="">Year Not Mentioned 	</option>
+
+                                 </select>
+                              </div>
+
+                              <div class="payment-input">
+                                 <span class="span">
+                                  CVV :
+                                 </span>
+                                 <input type="text" name="" id="input9" class="input">
+
+                             </div>
+                             </div>
+                   
+
+                                <div class="payment-input">
+                                 <span class="span">
+                                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  or    
+                                 </span>
+                             &nbsp;      <input type="checkbox" name="" id="input2"> <ion-icon name="cash-outline" id="td"></ion-icon> &nbsp; &nbsp;&nbsp; &nbsp;
+Cash On Delivery
+                                 <div>
+                                     <div class="payment-input">
+                                &nbsp; <input type="checkbox" name="" id="accept" class="input2" > &nbsp; Agree all the Terms and Condition
+                                 <p id="error"></p>
+                              </div>
+                           
+                              </div>
+                                </div>
+                                 <button class="b4" type="submit">Order 
+                                 </button>
+                                 </form>
+                             </div>
+               
+                          </div>
+                        
+                                <ion-icon name="close" id="cart-close2"></ion-icon>
+                        
+                          
+                   </div>
+                       
+
+       
+
+                               <script src="product.js"></script>
+</body>
+</html>  
