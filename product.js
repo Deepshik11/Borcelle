@@ -117,7 +117,9 @@ function updatetotal() {
   const totalvalue = document.querySelector(".total-price");
   let total = 0;
   cartitem.forEach((product) => {
-    let priceElement = parseFloat(product.querySelector(".price1").innerHTML);
+    let priceEle = product.querySelector(".price1").innerHTML;
+    let price = priceEle.replaceAll(",", "");
+    let priceElement = parseFloat(price);
     let qty = parseInt(product.querySelector(".cart-quantity").value);
     total += priceElement * qty;
     product.querySelector(".price2").innerText = +priceElement * qty;
