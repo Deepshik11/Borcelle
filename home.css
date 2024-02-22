@@ -134,12 +134,12 @@
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-around;
+  width: 100vw;
 }
 /* contain the text container of the advertisement section  */
 .two_poster {
   background-color: transparent;
   flex-basis: 50%;
-  min-width: 300px;
 }
 /* advertisement image  */
 .two_poster img {
