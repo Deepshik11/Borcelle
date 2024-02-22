@@ -15,13 +15,13 @@
   color: black;
   transition: 0.3s ease;
   position: relative;
+  display: block;
 }
 
 /* contain all the anchor tag  */
 .list {
   display: flex;
   align-items: center;
-  display: flex;
   padding-right: 20px;
 }
 
@@ -73,9 +73,6 @@
   color: black;
   padding-bottom: 8px;
   position: sticky;
-
-  top: 0;
-  left: 0;
   border-bottom: 2px solid gray;
   z-index: 1000;
 }
@@ -146,6 +143,7 @@
   padding-top: 50px;
   background-color: transparent;
   margin-left: 80px;
+  min-width: 300px;
 }
 /* advertisement heading  */
 .two_poster h1 {
@@ -195,6 +193,7 @@
 /* hold all the container in one main container  */
 .arrival_collection {
   display: flex;
+  overflow-x: hidden;
 }
 /* carry all the image in one container  */
 .arrival_categoris {
@@ -232,6 +231,9 @@
   padding-top: 5px;
 }
 /* contain all the image in the latest product  and featured product section  */
+.featured-container {
+  overflow-x: hidden;
+}
 .colum2 {
   display: flex;
   flex-wrap: wrap;
@@ -371,18 +373,22 @@ small {
   margin-top: 25px;
   color: #555;
 }
+.review-container {
+  overflow-x: hidden;
+}
 .review-container .colo-3 {
-  width: 300px;
+  min-width: 300px;
+  max-width: 300px;
   text-align: center;
   padding: 40px, 20px;
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: transform 0.5s;
-  margin-left: 70px;
-  margin-right: 70px;
+  gap: 40px;
   padding-top: 30px;
   margin-bottom: 50px;
   padding-bottom: 30px;
+  overflow: hidden;
 }
 .review-container .colo-3:hover {
   transform: translateY(-10px);
@@ -409,7 +415,9 @@ small {
 }
 .row-3 {
   display: flex;
-  margin-left: 100px;
+  gap: 10%;
+  justify-content: space-around;
+  justify-content: center;
 }
 .ratting-1 {
   padding-top: 5px;
@@ -429,6 +437,7 @@ small {
 /* footer page  */
 .contact {
   background-color: #e4fff6;
+  overflow: hidden;
 }
 .footer-1 h1 {
   font-family: "Mier book";
