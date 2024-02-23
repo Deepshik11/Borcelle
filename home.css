@@ -791,7 +791,7 @@ iframe {
   margin-top: 10px;
   margin-left: 15px;
 }
-.helpimg p {
+.cimg p {
   font-size: 14px;
 }
 .helpimg img {
@@ -903,14 +903,14 @@ iframe {
 }
 .contend1 {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 20px;
   color: black;
   margin-top: 10px;
   position: relative;
   letter-spacing: 0.5px;
   padding: 5px;
-
   cursor: pointer;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 .help1 {
   position: absolute;
@@ -922,9 +922,10 @@ iframe {
   margin-left: 20px;
   margin-bottom: 10px;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 400;
   display: none;
   margin-right: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 .helpcontend2 {
   position: fixed;
