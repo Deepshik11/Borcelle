@@ -465,7 +465,7 @@ p .fa-inr {
 .cart {
   position: fixed;
   top: 0;
-  right: -100%;
+  right: -700px;
   width: 600px;
   height: 100vh;
   overflow-y: auto;
@@ -608,7 +608,7 @@ li {
   height: 100vh;
   width: 480px;
   top: 0;
-  right: -480px;
+  right: -680px;
   overflow-x: hidden;
   overflow-y: scroll;
   background-color: rgb(231, 231, 231);
@@ -790,7 +790,7 @@ li {
   height: 100vh;
   width: 480px;
   top: 0;
-  right: -480px;
+  right: -680px;
   overflow-x: hidden;
   overflow-y: scroll;
   background-color: rgb(231, 231, 231);
@@ -843,7 +843,7 @@ li {
   height: 100vh;
   width: 480px;
   top: 0;
-  right: -480px;
+  right: -680px;
   overflow-x: hidden;
   overflow-y: scroll;
   background-color: rgb(231, 231, 231);
@@ -861,7 +861,7 @@ li {
   height: 100vh;
   width: 480px;
   top: 0;
-  right: -480px;
+  right: -680px;
   overflow-x: hidden;
   overflow-y: scroll;
   background-color: rgb(231, 231, 231);
@@ -879,7 +879,7 @@ li {
   height: 100vh;
   width: 480px;
   top: 0;
-  right: -480px;
+  right: -680px;
   overflow-x: hidden;
   overflow-y: scroll;
   background-color: rgb(231, 231, 231);
@@ -897,7 +897,7 @@ li {
   height: 100vh;
   width: 480px;
   top: 0;
-  right: -480px;
+  right: -680px;
   overflow-x: hidden;
   overflow-y: scroll;
   background-color: rgb(231, 231, 231);
@@ -915,7 +915,7 @@ li {
   height: 100vh;
   width: 480px;
   top: 0;
-  right: -480px;
+  right: -680px;
   overflow-x: hidden;
   overflow-y: scroll;
   background-color: rgb(231, 231, 231);
@@ -994,7 +994,7 @@ li {
   height: 100vh;
   width: 700px;
   top: 0;
-  right: -700px;
+  right: -800px;
   overflow-x: hidden;
   overflow-y: scroll;
   z-index: 10004;
